@@ -1,10 +1,4 @@
 
-/* 覚悟のcss 本当にやれんのか？　*/
-
-/*body{
-    background: pink;
-}*/
-
 .se-container{
     display: block;
     width: 100%;
@@ -82,9 +76,6 @@
     top: 0px;
 }
 
-
-
-
 .aboutme {
   padding: 150px 60px 300px;
 }
@@ -101,17 +92,7 @@
   transform: rotate(5deg);
 }
 
-
-
-
-
-
 /* ----------------------------------------   */
-
-
-
-
-
 
 .hvr-sweep-to-right:before {
   background: red;
@@ -130,13 +111,6 @@
     padding: 6px 12px;
     text-decoration: none;
 }
-
-
-/*.comet {
-  background: #989898;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%);
-}*/
 
 html {
   font-size: 62.5%;
@@ -172,82 +146,46 @@ nav {
   background-color: #232323;
 }
 
-
-
 .aboutme h2, .works h2 {
   color: #232323;
   text-shadow: 0px 0px 20px rgba(127, 127, 127, 1);
   background-color: #ffffff;
-
 }
-
-
 
 .navbar-brand {
   font-size: 2.5rem;
-
   color: #232323;
   text-shadow: 0px 0px 20px rgba(127, 127, 127, 1);
   background-color: #232323;
 }
 
-
-/*.offset {
-  height: 86px;
-}*/
-
-
-
 .jumbotron p {
   font-size: 1.8rem;
-
 }
-
-/*.jumbotron {
-   background:url(../img/port.jpeg) center no-repeat;
-
-   background-size: cover;
-
-   background-position: center;
-
-}*/
 
 .jumbotron {
-
 height: 140vh;
-
    background:url(../img/port.JPEG) center no-repeat;
-
    background-size: cover;
-
    background-position: center;
-
 }
 
-
 .jumbotronProduct {
-
 height: 110vh;
-
    background:url(../img/port.JPEG) center no-repeat;
-
    background-size: cover;
-
    background-position: center;
-
 }
 
 .jumbotron h1, .jumbotron p, .jumbotronProduct h1, .jumbotronProduct p {
 
 margin-top: 50px;
-/*color: blue;*/
 
 color: #555;
 text-shadow:
   0 0 15px #edf8ff,
   0 0 10px #edf8ff,
   0 0 20px #edf8ff;
-
 }
 
 
@@ -284,8 +222,6 @@ text-shadow:
     margin-top: 20px;
   }
 
-
-
   .jumbotronProduct {
     /*height: 600px;*/
   }
@@ -302,110 +238,82 @@ text-shadow:
     margin-top: 20px;
   }
 
+  .se-slope:nth-child(odd){
+      /*background: #000;*/
+      transform: rotate(3deg);
+      /*margin-top: -200px;*/
+      /*box-shadow: 0px -1px 3px rgba(0,0,0,0.4);*/
+  }
+
+  .se-slope:nth-child(even){
+      /*background: #e90089;*/
+      transform: rotate(-3deg);
+      /*box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;*/
+  }
+
+  /*.se-slope:nth-child(odd) .se-content{
+      background: #e90089;
+      color: #000;
+  }
+  .se-slope:nth-child(even) .se-content{
+      background: #000;
+      color: #e90089;
+  }*/
+
+  .se-content  {
+      /*font-size: 60px;*/
+      /*position: relative;*/
+      /*display: inline-block;*/
+      /*padding: 10px 30px 8px 30px;*/
+      /*height: 80px;*/
+      /*line-height: 80px;*/
+      /*margin-bottom: 20px;*/
+      /*font-family: 'Bitter', 'Trebuchet MS', Arial;*/
+      /*text-shadow: 1px 1px 1px rgba(0,0,0,0.9);*/
+      transform: rotate(-3deg);
+  }
 
 
-
-/* 上のやつ　コピペしてきた*/
-
-                    /*.se-container{
-                        display: block;
-                        width: 100%;
-                        overflow: hidden;
-
-                    }
-                    */
-
-                    /*
-                    .se-slope{
-                      margin: 0px -50px;
-                      transform-origin: left center;
-                    }
-                    */
-
-                    .se-slope:nth-child(odd){
-                        /*background: #000;*/
-                        transform: rotate(3deg);
-                        /*margin-top: -200px;*/
-                        /*box-shadow: 0px -1px 3px rgba(0,0,0,0.4);*/
-                    }
-
-                    .se-slope:nth-child(even){
-                        /*background: #e90089;*/
-                        transform: rotate(-3deg);
-                        /*box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;*/
-                    }
+  /*.se-content:before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 38px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-right: 60px solid black;
+      position: absolute;
+      left: -59px;
+      top: 0px;
+  }*/
 
 
-                    /*.se-slope:nth-child(odd) .se-content{
-                        background: #e90089;
-                        color: #000;
-                    }
-                    .se-slope:nth-child(even) .se-content{
-                        background: #000;
-                        color: #e90089;
-                    }*/
+  /*.se-content:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 38px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 60px solid black;
+      position: absolute;
+      right: -59px;
+      top: 0px;
+  }*/
 
+  .aboutme {
+    padding: 150px 60px 200px;
+  }
 
-                    .se-content  {
-                        /*font-size: 60px;*/
-                        /*position: relative;*/
-                        /*display: inline-block;*/
-                        /*padding: 10px 30px 8px 30px;*/
-                        /*height: 80px;*/
-                        /*line-height: 80px;*/
-                        /*margin-bottom: 20px;*/
-                        /*font-family: 'Bitter', 'Trebuchet MS', Arial;*/
-                        /*text-shadow: 1px 1px 1px rgba(0,0,0,0.9);*/
+  .aboutme .container {
+    transform: rotate(-3deg);
+  }
 
-                        transform: rotate(-3deg);
-                    }
+  .skills {
+    padding: 100px 60px;
+  }
 
-
-                    /*.se-content:before{
-                        content: '';
-                        width: 0;
-                        height: 0;
-                        border-top: 38px solid transparent;
-                        border-bottom: 60px solid transparent;
-                        border-right: 60px solid black;
-                        position: absolute;
-                        left: -59px;
-                        top: 0px;
-                    }*/
-
-
-                    /*.se-content:after{
-                        content: '';
-                        width: 0;
-                        height: 0;
-                        border-top: 38px solid transparent;
-                        border-bottom: 60px solid transparent;
-                        border-left: 60px solid black;
-                        position: absolute;
-                        right: -59px;
-                        top: 0px;
-                    }*/
-
-
-                    .aboutme {
-                      padding: 150px 60px 200px;
-                    }
-
-                    .aboutme .container {
-                      transform: rotate(-3deg);
-                    }
-
-                    .skills {
-                      padding: 100px 60px;
-                    }
-
-                    .skills .container {
-                      transform: rotate(3deg);
-                    }
-
-
-
-
+  .skills .container {
+    transform: rotate(3deg);
+  }
 
 }
 

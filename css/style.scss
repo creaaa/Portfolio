@@ -85,7 +85,7 @@ $keyColor: #14c0c9;
   // Works
   #works {
     .works-box {
-      width: (100% / 3);         // widthを33%にして1列に3つ表示（つまり横に並ぶ）
+      width: (100% / 3); // widthを33%にして1列に3つ表示（つまり横に並ぶ）
       a {
         .works-box-inner {
           display: none;
