@@ -1,0 +1,108 @@
+$keyColor: #14c0c9;
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+#works {
+  padding-bottom: 0;
+  h2 {
+    margin-bottom: 50px;
+  }
+  .works-box {
+    width: 100%;
+    float: left;
+    height: 100%;
+    a {
+      display: block;
+      position: relative;
+      .works-box-inner {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        color: #FFF;
+        div {
+          position: absolute;
+          margin: auto;
+          height: 40%;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 10px 20px;
+        }
+        h3 {
+          font-size: 1.6rem;
+          margin: 0 0 5px;
+          font-weight: bold;
+        }
+        small {
+          font-size: 1rem;
+          display: block;
+          margin-bottom: 15px;
+        }
+        .button-readmore {
+          margin: auto;
+          text-align: center;
+          padding: 5px 0;
+          width: 180px;
+          display: block;
+          color: #FFF;
+          font-weight: bold;
+          background-color: $keyColor;
+          @extend .abel;
+          @extend .uppercase;
+
+          //@include border-radius(4px);
+          border-radius: 4px;
+
+          font-size: 1rem;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+@media (min-width: 1025px) {
+〜〜
+
+  // Works
+  #works {
+    .works-box {
+      width: (100% / 3);         // widthを33%にして1列に3つ表示（つまり横に並ぶ）
+      a {
+        .works-box-inner {
+          display: none;
+          width: 0%;
+          .button-readmore {
+            &:hover {
+              background-color: darken($keyColor, 10%);
+            }
+          }
+        }
+        &:hover {
+          .works-box-inner {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

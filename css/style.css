@@ -1,0 +1,729 @@
+
+/* 覚悟のcss 本当にやれんのか？　*/
+
+/*body{
+    background: pink;
+}*/
+
+.se-container{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    /*padding-top: 150px;*/
+}
+
+.se-slope{
+  margin: 0px -50px;
+  transform-origin: left center;
+}
+
+.se-slope:nth-child(odd){
+    background: #000;
+    transform: rotate(5deg);
+    margin-top: -200px;
+    box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
+}
+
+.se-slope:nth-child(even){
+    background: #e90089;
+    transform: rotate(-5deg);
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
+}
+
+
+.se-slope:nth-child(odd) .se-content{
+    background: #e90089;
+    color: #000;
+}
+.se-slope:nth-child(even) .se-content{
+    background: #000;
+    color: #e90089;
+}
+
+
+.se-content  {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px 8px 30px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-family: 'Bitter', 'Trebuchet MS', Arial;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+
+    transform: rotate(-5deg);
+
+
+}
+
+
+.se-content:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 38px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid black;
+    position: absolute;
+    left: -59px;
+    top: 0px;
+}
+
+.se-content:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 38px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid black;
+    position: absolute;
+    right: -59px;
+    top: 0px;
+}
+
+
+
+
+.aboutme {
+  padding: 150px 60px 300px;
+}
+
+.aboutme .container {
+  transform: rotate(-5deg);
+}
+
+.skills {
+  padding: 100px 60px;
+}
+
+.skills .container {
+  transform: rotate(5deg);
+}
+
+
+
+
+
+
+/* ----------------------------------------   */
+
+
+
+
+
+
+.hvr-sweep-to-right:before {
+  background: red;
+}
+
+.hoverbutton {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #777;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+
+/*.comet {
+  background: #989898;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%);
+}*/
+
+html {
+  font-size: 62.5%;
+
+  height: 100%;
+}
+
+body {
+    background-color: white;
+
+    /*background-color: pink;*/
+
+    /*font-family: 'Hind Guntur', sans-serif;*/
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-family: 'Noto Sans', sans-serif;
+
+    height: 100%;
+
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+nav {
+  opacity: 1;
+  background-color: black;
+}
+
+.skills h2, .contact h2 {
+  color: #ffffff;
+  text-shadow: 0px 0px 20px rgba(255,255,0,1);
+  background-color: #232323;
+}
+
+
+
+.aboutme h2, .works h2 {
+  color: #232323;
+  text-shadow: 0px 0px 20px rgba(127, 127, 127, 1);
+  background-color: #ffffff;
+
+}
+
+
+
+.navbar-brand {
+  font-size: 2.5rem;
+
+  color: #232323;
+  text-shadow: 0px 0px 20px rgba(127, 127, 127, 1);
+  background-color: #232323;
+}
+
+
+/*.offset {
+  height: 86px;
+}*/
+
+
+
+.jumbotron p {
+  font-size: 1.8rem;
+
+}
+
+/*.jumbotron {
+   background:url(../img/port.jpeg) center no-repeat;
+
+   background-size: cover;
+
+   background-position: center;
+
+}*/
+
+.jumbotron {
+
+height: 140vh;
+
+   background:url(../img/port.JPEG) center no-repeat;
+
+   background-size: cover;
+
+   background-position: center;
+
+}
+
+
+.jumbotronProduct {
+
+height: 110vh;
+
+   background:url(../img/port.JPEG) center no-repeat;
+
+   background-size: cover;
+
+   background-position: center;
+
+}
+
+.jumbotron h1, .jumbotron p, .jumbotronProduct h1, .jumbotronProduct p {
+
+margin-top: 50px;
+/*color: blue;*/
+
+color: #555;
+text-shadow:
+  0 0 15px #edf8ff,
+  0 0 10px #edf8ff,
+  0 0 20px #edf8ff;
+
+}
+
+
+/* PCの　設定をしている*/
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top:196px;
+    padding-bottom: 196px;
+  }
+
+  .jumbotronProduct {
+    padding-top:196px;
+    padding-bottom: 196px;
+  }
+
+}
+
+/* スマホで有効　ここで　jumbotronの　スマホ時の　設定をしている*/
+@media screen and (max-width: 768px) {
+
+  .jumbotron {
+    /*height: 600px;*/
+  }
+
+ .jumbotron img {
+    margin-top: 30%;
+  }
+
+  .jumbotron h1 {
+    margin-top: 30px;
+  }
+
+  .jumbotron p {
+    margin-top: 20px;
+  }
+
+
+
+  .jumbotronProduct {
+    /*height: 600px;*/
+  }
+
+ .jumbotronProduct img {
+    margin-top: 30%;
+  }
+
+  .jumbotronProduct h1 {
+    margin-top: 30px;
+  }
+
+  .jumbotronProduct p {
+    margin-top: 20px;
+  }
+
+
+
+
+/* 上のやつ　コピペしてきた*/
+
+                    /*.se-container{
+                        display: block;
+                        width: 100%;
+                        overflow: hidden;
+
+                    }
+                    */
+
+                    /*
+                    .se-slope{
+                      margin: 0px -50px;
+                      transform-origin: left center;
+                    }
+                    */
+
+                    .se-slope:nth-child(odd){
+                        /*background: #000;*/
+                        transform: rotate(3deg);
+                        /*margin-top: -200px;*/
+                        /*box-shadow: 0px -1px 3px rgba(0,0,0,0.4);*/
+                    }
+
+                    .se-slope:nth-child(even){
+                        /*background: #e90089;*/
+                        transform: rotate(-3deg);
+                        /*box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;*/
+                    }
+
+
+                    /*.se-slope:nth-child(odd) .se-content{
+                        background: #e90089;
+                        color: #000;
+                    }
+                    .se-slope:nth-child(even) .se-content{
+                        background: #000;
+                        color: #e90089;
+                    }*/
+
+
+                    .se-content  {
+                        /*font-size: 60px;*/
+                        /*position: relative;*/
+                        /*display: inline-block;*/
+                        /*padding: 10px 30px 8px 30px;*/
+                        /*height: 80px;*/
+                        /*line-height: 80px;*/
+                        /*margin-bottom: 20px;*/
+                        /*font-family: 'Bitter', 'Trebuchet MS', Arial;*/
+                        /*text-shadow: 1px 1px 1px rgba(0,0,0,0.9);*/
+
+                        transform: rotate(-3deg);
+                    }
+
+
+                    /*.se-content:before{
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 38px solid transparent;
+                        border-bottom: 60px solid transparent;
+                        border-right: 60px solid black;
+                        position: absolute;
+                        left: -59px;
+                        top: 0px;
+                    }*/
+
+
+                    /*.se-content:after{
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 38px solid transparent;
+                        border-bottom: 60px solid transparent;
+                        border-left: 60px solid black;
+                        position: absolute;
+                        right: -59px;
+                        top: 0px;
+                    }*/
+
+
+                    .aboutme {
+                      padding: 150px 60px 200px;
+                    }
+
+                    .aboutme .container {
+                      transform: rotate(-3deg);
+                    }
+
+                    .skills {
+                      padding: 100px 60px;
+                    }
+
+                    .skills .container {
+                      transform: rotate(3deg);
+                    }
+
+
+
+
+
+}
+
+.maru img {
+
+  border-radius: 50%;
+  height:100px;
+  width: 100px;
+}
+
+
+
+/*
+//////////////////
+//// about me ////
+//////////////////
+*/
+
+.aboutme {
+  /*padding: 30px;*/
+
+  /*padding: 250px 60px 250px;*/
+
+
+
+  /*background-color: #232323;*/
+  background-color: white;
+  color: black;
+}
+
+
+
+
+.aboutme h2 {
+  margin-bottom: 50px;
+}
+
+.aboutme h3 {
+  color: black;
+}
+
+.frame {
+	position: relative;
+	display: inline-block;
+	width: 230px;
+	height: 230px;
+	border: 10px solid #fff;
+	box-shadow: 0 0 4px #999;
+	transform: rotate(20deg); /* 全体を回転 */
+	overflow: hidden; /* 不要部分は消す */
+}
+
+
+/*.frame img {
+	margin-top: 0;
+	margin-left: -90px;  ポジション調整
+	transform-origin: 0 0;
+	transform: rotate(-20deg);  写真は元に戻す
+}*/
+
+
+/*
+///////////////
+//// Skills ////
+///////////////
+*/
+
+.skills {
+  /*padding: 30px 30px;*/
+  background-color: #232323;
+  color: white;
+}
+
+.skills h2 {
+  margin-bottom: 50px;
+}
+
+.skills h3 {
+  font-size: 2.4rem;
+  margin: 25px 0;
+}
+
+.skills div.col-md-4 {
+  padding-bottom: 40px;
+}
+
+.skills img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+/*
+///////////////
+//// Works ////
+///////////////
+*/
+
+/*.works {
+  padding-top: 30px;
+}*/
+
+
+
+/*//////////////////
+//// contact me ////
+////////////////////
+*/
+
+.contact {
+  background-color: #232323;
+  padding: 30px 30px 0;
+  color: white;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #ccc;
+  /*font-family: "Open sans", Helvetica, Arial, sans-serif;*/
+  margin-bottom: 20px;
+  /*margin-left: -15px; /* よくない */
+}
+
+
+
+.contact .form-group {
+  color: white;
+}
+
+
+.contact p {
+  color: white;
+
+}
+
+.contact > p {
+  margin-top: 100px;
+  background-color: yellow;
+}
+
+.contact label {
+  /*padding-bottom: 10px;*/
+  font-size: 2rem;
+}
+
+
+.contact img {
+  margin: 20px 8px 20px;
+
+  width: 32px;
+  height: 32px;
+}
+
+submit {
+  margin: 10px 0;
+}
+
+/*.social {
+  margin-top: 10px;
+}*/
+
+/*//////////////////
+////   footer   ////
+////////////////////
+*/
+
+
+footer {
+
+  background-color: #191919;
+  color: white;
+
+
+  /*padding: 20px;*/
+  /*letter-spacing: 0.15rem;*/
+
+}
+
+footer .container .row {
+  /*margin: 25px 0;*/
+    margin: 7px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+
+
+/********************/
+
+/* scss で出力　*/
+
+
+/*@charset "UTF-8";*/
+
+.abel, .works .works-box a .works-box-inner .button-readmore {
+  font-family: 'Abel', sans-serif;
+}
+
+.uppercase, .works .works-box a .works-box-inner .button-readmore {
+  text-transform: uppercase;
+}
+
+.works {
+  padding-bottom: 0;
+}
+
+.works h2 {
+  margin-bottom: 50px;
+}
+
+.works .works-box {
+  width: 100%;
+  float: left;
+  height: 100%;
+}
+
+.works .works-box a {
+  display: block;
+  position: relative;
+}
+
+.works .works-box a .works-box-inner {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #FFF;
+}
+
+.works .works-box a .works-box-inner div {
+  position: absolute;
+  margin: auto;
+  height: 40%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+}
+
+.works .works-box a .works-box-inner h3 {
+  font-size: 1.6rem;
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.works .works-box a .works-box-inner small {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.works .works-box a .works-box-inner .button-readmore {
+  margin: auto;
+  text-align: center;
+  padding: 5px 0;
+  width: 180px;
+  display: block;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #14c0c9;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.works .works-box img {
+  max-width: 100%;
+  display: block;
+}
+
+.works::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+@media (max-width: 980px) {
+
+  .aboutme .col-md-4 {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+
+  /*.aboutme .col-md-4 {
+    text-align: center;
+  }*/
+
+  .works .works-box {
+    width: 33.33333%;
+  }
+
+  .works .works-box a .works-box-inner {
+    display: none;
+    width: 0%;
+  }
+
+  .works .works-box a .works-box-inner .button-readmore:hover {
+    background-color: #0f949b;
+  }
+
+  .works .works-box a:hover .works-box-inner {
+    display: block;
+    width: 100%;
+  }
+}

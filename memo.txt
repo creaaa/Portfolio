@@ -1,0 +1,110 @@
+2171行目と1275行目でマウスオーバーを灰色に変えている
+
+
+
+
+<div class="contact">
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6">
+
+    </div>
+
+    <div class="col-md-6 col-xs-12">
+      <h3>TO HIRE ME</h3>
+
+      <div class="container">
+          <form class="form-horizontal">
+
+              <div class="form-group">
+                  <label class="control-label col-xs-1">name</label>
+                  <div class="col-md-5 col-xs-11">
+                      <input type="text" name="name" class="form-control">
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label class="control-label col-xs-1">password</label>
+                  <div class="col-md-5 col-xs-11">
+                      <input type="text" name="password" class="form-control">
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-xs-1" for="control-label col-xs-2">Comment:</label>
+                  <div class="col-md-5 col-xs-11">
+                  <textarea id="comment" class="form-control" rows="5" ></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <div class="col-xs-offset-1 col-xs-10">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+              </div>
+
+          </form>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      <!-- </button> -->
+      <a class="navbar-brand" href="#">Masa Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li class=""><a href="#">About</a></li>
+      <li class=""><a href="#">Skill</a></li>
+      <li class=""><a href="#">Works</a></li>
+      <li class=""><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+----
+
+
+<nav class="navbar navbar-default">
+　　　　<!--デフォルトのスタイリングをリセットしたい場合、navbar-default を削除。--->
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+　          <!--ハンバーガー-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+          <p>■</p><!--好きなハンバーガーに変更。-->
+      </button>
+      <!--//ハンバーガー-->
+
+      <!--左ロゴ-->
+      <a class="navbar-brand" href="#">サンプル株式会社</a><!--左上のロゴ部分-->
+      <!--//左ロゴ-->
+
+    </div>
+
+    <!---メニュー　li が項目。必要な分だけ li をコピペで増やす。---->
+    <div class="collapse navbar-collapse" id="site-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">会社情報</a></li>
+        <li><a href="#">事業情報</a></li>
+        <li><a href="#">ニュース</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <!---//メニュー---->
+  </div>
+</nav>
