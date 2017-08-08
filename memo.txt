@@ -1,1 +1,27 @@
+
 2171行目と1275行目でマウスオーバーを灰色に変えている
+
+// ２段構成の画像ギャラリー
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../img/MovieSanctuary/ms1min.jpg">
+    </div>
+    <div class="col-md-6">
+      <img src="../img/MovieSanctuary/ms2min.jpg">
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../img/MovieSanctuary/ms3min.jpg">
+    </div>
+    <div class="col-md-6">
+      <img src="../img/MovieSanctuary/ms4min.jpg">
+    </div>
+  </div>
+</div>
