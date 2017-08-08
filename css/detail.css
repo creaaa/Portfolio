@@ -1,4 +1,9 @@
 
+img {
+max-width : 100% ;
+height : auto ;
+}
+
 .se-container{
     display: block;
     width: 100%;
