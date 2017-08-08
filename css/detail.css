@@ -13,14 +13,14 @@
 
 .se-slope:nth-child(odd){
     background: #000;
-    transform: rotate(5deg);
+    /*transform: rotate(5deg);*/
     margin-top: -200px;
     box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
 }
 
 .se-slope:nth-child(even){
     background: #e90089;
-    transform: rotate(-5deg);
+    /*transform: rotate(-5deg);*/
     box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
 }
 
@@ -46,7 +46,7 @@
     font-family: 'Bitter', 'Trebuchet MS', Arial;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 
-    transform: rotate(-5deg);
+    /*transform: rotate(-5deg);*/
 
 
 }
@@ -81,7 +81,7 @@
 }
 
 .aboutme .container {
-  transform: rotate(-5deg);
+  /*transform: rotate(-5deg);*/
 }
 
 .skills {
@@ -89,7 +89,7 @@
 }
 
 .skills .container {
-  transform: rotate(5deg);
+  /*transform: rotate(5deg);*/
 }
 
 /* ----------------------------------------   */
@@ -172,7 +172,7 @@ height: 140vh;
 
 .jumbotronProduct {
 height: 110vh;
-   background:url(../img/port.JPEG) center no-repeat;
+   background:url(../img/tx-min.jpg) center no-repeat;
    background-size: cover;
    background-position: center;
 }
@@ -240,14 +240,14 @@ text-shadow:
 
   .se-slope:nth-child(odd){
       /*background: #000;*/
-      transform: rotate(3deg);
+      /*transform: rotate(3deg);*/
       /*margin-top: -200px;*/
       /*box-shadow: 0px -1px 3px rgba(0,0,0,0.4);*/
   }
 
   .se-slope:nth-child(even){
       /*background: #e90089;*/
-      transform: rotate(-3deg);
+      /*transform: rotate(-3deg);*/
       /*box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;*/
   }
 
@@ -270,7 +270,7 @@ text-shadow:
       /*margin-bottom: 20px;*/
       /*font-family: 'Bitter', 'Trebuchet MS', Arial;*/
       /*text-shadow: 1px 1px 1px rgba(0,0,0,0.9);*/
-      transform: rotate(-3deg);
+      /*transform: rotate(-3deg);*/
   }
 
 
@@ -362,7 +362,7 @@ text-shadow:
 	height: 230px;
 	border: 10px solid #fff;
 	box-shadow: 0 0 4px #999;
-	/*transform: rotate(20deg);*/ /* 全体を回転 */
+	transform: rotate(20deg); /* 全体を回転 */
 	overflow: hidden; /* 不要部分は消す */
 }
 
