@@ -617,8 +617,14 @@ footer p {
     text-align: center;
   }*/
 
+
   .works .works-box {
     width: 33.33333%;
+  }
+
+
+  .works .works-box img {
+      height: 300px;
   }
 
   .works .works-box a .works-box-inner {
