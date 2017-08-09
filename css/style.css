@@ -304,7 +304,7 @@ text-shadow:
   }
 
   .aboutme .container {
-    /*transform: rotate(-3deg);*/
+    transform: rotate(-3deg);
   }
 
   .skills {
@@ -312,7 +312,7 @@ text-shadow:
   }
 
   .skills .container {
-    /*transform: rotate(3deg);*/
+    transform: rotate(3deg);
   }
 
 }
