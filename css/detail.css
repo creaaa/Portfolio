@@ -605,7 +605,15 @@ footer p {
   clear: both;
 }
 
+.project_navi {
+  margin-top: 60px;
+}
 
+.project_navi div a p {
+    font: bold;
+    color: black;
+    font-size: 22px;
+}
 
 @media (max-width: 980px) {
 
