@@ -613,6 +613,10 @@ footer p {
     text-align: center;
   }
 
+  .jumbotronProduct > h1 {
+    padding-top: 100px;
+  }
+
 }
 
 @media (min-width: 1025px) {

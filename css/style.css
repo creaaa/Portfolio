@@ -604,6 +604,10 @@ footer p {
 
 @media (max-width: 980px) {
 
+  * {
+    transform: rotate(0deg);
+  } 
+
   .aboutme .col-md-4 {
     text-align: center;
   }
