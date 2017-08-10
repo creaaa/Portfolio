@@ -1,3 +1,3 @@
 <div align="center">
-<img src="https://github.com/creaaa/Crea/blob/master/img/Crea.png" width="***サイズ***">
+<img src="https://github.com/creaaa/Portfolio/blob/master/img/img.png">
 </div>
